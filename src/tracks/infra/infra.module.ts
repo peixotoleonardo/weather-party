@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 
-import { DIModule } from '@weather-party/weather/infra/di/di.module';
+import { DIModule } from '@weather-party/tracks/infra/di/di.module';
 
 @Module({
   imports: [DIModule],

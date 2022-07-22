@@ -18,8 +18,12 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@weather-party": ["./src"], 
-      "@weather-party/*": ["./src/*"] 
+      "@weather-party": [
+        "./src"
+      ],
+      "@weather-party/*": [
+        "./src/*"
+      ]
     }
   }
 }

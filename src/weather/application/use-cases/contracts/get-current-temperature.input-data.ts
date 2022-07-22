@@ -1,5 +1,3 @@
 export class GetCurrentTemperatureInputData {
-  constructor(
-    readonly cityName: string,
-  ) {}
+  constructor(readonly cityName: string) {}
 }

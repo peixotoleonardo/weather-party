@@ -6,6 +6,7 @@ export const OpenWeatherConfig = registerAs('open-weather', () => ({
     apiKey: process.env.OPEN_WEATHER_API_KEY,
   },
   endpoints: {
-    getCurrentTemperature: process.env.OPEN_WEATHER_GET_CURRENT_TEMPERATURE_ENDPOINT,
+    getCurrentTemperature:
+      process.env.OPEN_WEATHER_GET_CURRENT_TEMPERATURE_ENDPOINT,
   },
 }));

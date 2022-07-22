@@ -13,6 +13,6 @@ import { WeatherModule } from '@weather-party/weather/weather.module';
     }),
     WeatherModule,
     TracksModule,
-  ]
+  ],
 })
 export class AppModule {}

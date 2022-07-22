@@ -1,5 +1,3 @@
 export class SuggestTrackInputData {
-  constructor(
-    readonly cityName: string,
-  ) {}
+  constructor(readonly cityName: string) {}
 }

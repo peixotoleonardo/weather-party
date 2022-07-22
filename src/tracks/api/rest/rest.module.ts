@@ -5,6 +5,6 @@ import { SuggestTrackController } from '@weather-party/tracks/api/rest/controlle
 
 @Module({
   imports: [ApplicationModule],
-  controllers: [SuggestTrackController]
+  controllers: [SuggestTrackController],
 })
 export class RestModule {}

@@ -1,10 +1,10 @@
-import { Module } from "@nestjs/common";
+import { Module } from '@nestjs/common';
 
-import { InfraModule } from "@weather-party/weather/infra/infra.module";
-import { ApplicationModule } from "@weather-party/weather/application/application.module";
+import { InfraModule } from '@weather-party/weather/infra/infra.module';
+import { ApplicationModule } from '@weather-party/weather/application/application.module';
 
 @Module({
   imports: [InfraModule, ApplicationModule],
-  exports: [ApplicationModule]
+  exports: [ApplicationModule],
 })
 export class WeatherModule {}

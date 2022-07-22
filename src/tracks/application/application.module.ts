@@ -11,8 +11,8 @@ import { SuggestTrackUseCase } from '@weather-party/tracks/application/use-cases
     {
       provide: ISuggestTrackUseCase,
       useClass: SuggestTrackUseCase,
-    }
+    },
   ],
-  exports: [ISuggestTrackUseCase]
+  exports: [ISuggestTrackUseCase],
 })
 export class ApplicationModule {}
