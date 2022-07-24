@@ -11,8 +11,5 @@ export const SpotifyConfig = registerAs('spotify', () => ({
     endpoints: {
       getToken: process.env.SPOTIFY_AUTH_GET_TOKEN_ENDPOINT,
     },
-  },
-  endpoints: {
-    getTracks: process.env.SPOTIFY_GET_TRACKS_ENDPOINT,
   }
 }));

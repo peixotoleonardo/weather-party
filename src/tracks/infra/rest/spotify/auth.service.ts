@@ -1,12 +1,14 @@
 import { ConfigType } from '@nestjs/config';
 import axios, { AxiosInstance } from 'axios';
 import { Inject, Injectable } from '@nestjs/common';
+import { plainToInstance } from 'class-transformer';
 
 import { SpotifyConfig } from '@weather-party/config/spotify.config';
+import { Auth } from '@weather-party/tracks/infra/rest/spotify/contracts/auth';
 import { GetTokenResponse } from '@weather-party/tracks/infra/rest/spotify/responses/get-token.response';
 
 @Injectable()
-export class AuthService {
+export class AuthService implements Auth {
   private readonly http: AxiosInstance;
 
   constructor(
@@ -31,6 +33,6 @@ export class AuthService {
       },
     );
 
-    return data;
+    return plainToInstance(GetTokenResponse, data);
   }
 }

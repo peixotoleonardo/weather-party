@@ -9,8 +9,7 @@ import { WrapperAuthService } from '@weather-party/tracks/infra/rest/spotify/wra
 
 @Injectable()
 export class PlayListService implements ITracksService {
-  constructor(
-    private readonly authService: WrapperAuthService) {}
+  constructor(private readonly authService: WrapperAuthService) {}
 
   async getTracks(query: GetTracksQuery): Promise<Track[]> {
     const token = await this.authService.getToken();
