@@ -23,7 +23,7 @@ export class SuggestTrackUseCase implements ISuggestTrackUseCase {
       new GetCurrentTemperatureInputData(input.cityName),
     );
 
-    const query = new GetTracksQuery(Genre.create(temperature));
+    const query = new GetTracksQuery(Genre.fromTemperature(temperature));
 
     return await this.tracksService.getTracks(query);
   }

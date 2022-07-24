@@ -13,7 +13,7 @@ export class Genre {
 
   private constructor(readonly genre: GenreEnum) {}
 
-  static create(temperature: Temperature): Genre {
+  static fromTemperature(temperature: Temperature): Genre {
     const temperatureInCelsius = temperature.convertTo(
       TemperatureScale.Celsius,
     );
